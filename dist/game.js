@@ -13,7 +13,8 @@ const certificate50Links=[
   ['Telegram','https://t.me/lunsvetkhvbot?start=0c6d83e679dc8286a9d56f5c41282820e12646d81b9d35bd02e2a6e0400cf265']
 ];
 const certificate100Links=certificate50Links.map(([name,url])=>[name,url.replace('0c6d83e679dc8286a9d56f5c41282820e12646d81b9d35bd02e2a6e0400cf265','047c812e1a06233926e595ab85504d7649d5367d9d469062892337394ef4ebc1')]);
-const certificateLinks={50:certificate50Links,100:certificate100Links};
+const certificate300Links=certificate50Links.map(([name,url])=>[name,url.replace('0c6d83e679dc8286a9d56f5c41282820e12646d81b9d35bd02e2a6e0400cf265','513c92221c00e5c67c3505380931f801bec77ce76c50c179cc06f4b98d6ace91')]);
+const certificateLinks={50:certificate50Links,100:certificate100Links,300:certificate300Links};
 function showCertificate(reward){
   const links=certificateLinks[reward]||[];
   $('claimLinks').replaceChildren();
